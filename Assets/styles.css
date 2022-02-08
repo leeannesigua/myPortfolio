@@ -56,6 +56,7 @@ h1{
 
 h2{
     font-size: 60px;
+   
 }
 
 #about img{
@@ -69,14 +70,23 @@ h2{
 
 #about p{
     font-size: 30px;
-    position: absolute;
+    position: absolute; /*make this relative*/
     padding-left: 200px;
     padding-top: 20px;
     flex-direction: column;
     flex-wrap: wrap;
 }
 
-#work{
+#workHeader{
+    padding-bottom: -500%;
+}
+
+
+.projects{
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    justify-content: center;
     height: 85em;
     width: 80%;
     background-color: lightslategrey;
@@ -87,7 +97,14 @@ h2{
     position: absolute;
 }
 
-.project1 h2{
+
+#project1 {
+    position: relative;
+    height: 30em;
+    width: 60em;
+    margin-top: -15%;
+}
+#project1 h3{
     font-size: 30px;
     position: relative;
     height: 46px;
@@ -96,23 +113,33 @@ h2{
     margin: 10px;
 }
 
-.project1 a:link img{
+/* #project1 a:link img{
     height: 30em;
     width: 60em;
     margin-top: 2%;
+    /* position: relative; 
+} */ 
+
+.projects div{
     position: relative;
+    height: 200px;
+    width: 200px;
+    margin: 20px;
 }
 
-.projects{
+h3{
+    font-size: 40px;
+}
+
+/* .projects div{
+    display: flex;
+    flex-wrap: wrap;
     height: 100px;
     width: 100px;
     position: relative;
-    display: flex;
-    flex-direction: row;
-    flex-wrap: wrap;
     margin-top: 5%;
     margin-left: 10%;
-}
+}  */
 
 
 #contact{
@@ -145,8 +172,8 @@ h2{
     box-shadow: 5px 5px 5px lightseagreen;
 }
 
-@media screen and (max-width: 768px) {
+/* /* @media screen and (max-width: 768px) {
     #work {
       flex-direction: column;
     }
-}
+} */
